@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<html>
 <!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]--> 
 <!--[if IE 7 ]>	<html lang="en" class="ie ie7"> <![endif]--> 
 <!--[if IE 8 ]>	<html lang="en" class="ie ie8"> <![endif]--> 
@@ -76,15 +76,15 @@
 </section>
 <section class="searching spacing">
 <div class="container">
-    <h2 class="text-center">BLASK Search</h2>
+    <h2 class="text-center">BLAST Search</h2>
 <div id="subscribe">
         <h4>Search a protein sequence against 10 versions</h4>
 	    <h4>of this particular protein from different species</h4>
-        <form action="" method="post" onsubmit="">
-            <p><input name="" value="Enter your sequence" type="text" id=""/>
-            <input type="button" value="Submit"/></p>
+        <form action="cgi-bin/blast.py" method="post" target="_blank">
+          <textarea name="holdcontent" cols="100" rows="10">Enter your sequence</textarea>
+            <input type="submit" value="Submit"/></p>
         </form>
-	</div>
+</div>
 </div>
 </section>
 
