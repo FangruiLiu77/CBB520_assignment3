@@ -8,8 +8,8 @@
 <meta charset="utf-8">
 <title>CBB520 Assignment 3</title>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 
 <body id="home">
@@ -17,7 +17,7 @@
 <div id="Content" class="wrapper topSection">
 	<div id="Header">
 	<div class="wrapper">
-		<div class="logo"><h1><img src="images/logo1.jpg" />Protein Coding Gene SIX6</h1>	</div>
+		<div class="logo"><h1><img src="{{ url_for('static', filename='images/logo1.jpg') }}" />Protein Coding Gene SIX6</h1>	</div>
         <h3>A Webpage of SIX6 Features Designed for CBB520 at Duke</h3>
         <h4>Fangrui Liu, Xinning Li, Yongjun Lu, Jiaqi Liu</h4>
 		</div>
@@ -80,9 +80,10 @@
 <div id="subscribe">
         <h4>Search a protein sequence against 10 versions</h4>
 	    <h4>of this particular protein from different species</h4>
-        <form action="cgi-bin/blast.py" method="post" target="_blank">
-          <textarea name="holdcontent" cols="100" rows="10">Enter your sequence</textarea>
-            <input type="submit" value="Submit"/></p>
+        <form action="{{ url_for('submit') }}" method="post">
+          <label for="input_sequence">Enter Your Sequence</label>
+          <input type="text" id="input_sequence" name="user_input">
+          <input type="submit" value="Submit"/>
         </form>
 </div>
 </div>
