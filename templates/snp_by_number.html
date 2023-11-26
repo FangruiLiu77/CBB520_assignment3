@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful</title>
+</head>
+<body>
+    <h1>Thank you for submitting your information!</h1>
+    <table border="1">
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+        {% for key, value in result.items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>
+                    {% if key == 'dbsnp_link' or key == 'omim_link' %}
+                        <a href="{{ value }}">{{ value }}</a>
+                    {% else %}
+                        {{ value }}
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!-- templates/blast_results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful</title>
+</head>
+<body>
+    <h1>Thank you for submitting your information!</h1>
+    <p>The isoelectric point of the protein submitted is: {{ user_input_pI }}</p>
+    
+    <h2>Isoelectric Points</h2>
+    <table border="1">
+        <tr>
+            <th>Protein ID</th>
+            <th>Isoelectric Point</th>
+        </tr>
+        {% for protein_data in isoelectrics %}
+        {% for protein_id, isoelectric_point in protein_data.items() %}
+        <tr>
+            <td>{{ protein_id }}</td>
+            <td>{{ isoelectric_point }}</td>
+        </tr>
+        {% endfor %}
+        {% endfor %}
+    </table>
+
+    <h2>Summary</h2>
+    <table border="1">
+        <tr>
+            <th>Hit ID</th>
+            <th>Identity</th>
+            <th>Similarity</th>
+        </tr>
+        {% for item in summary %}
+        <tr>
+            <td>{{ item['Hit ID'] }}</td>
+            <td>{{ item['Identity'] }}</td>
+            <td>{{ item['Similarity'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,100 @@
+dsSNP_number,intron,coding_region,utr5,utr3,upstream,downstream,synonymous ,dbsnp_link,omim_link,Ref_Allele,Alt_Allele
+rs10151958,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs10151958,N/A,T=0.102730,"C=0.897270, G=0.000000"
+rs1061108,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs1061108#frequency_tab,N/A,C=0.09513,G=0.90487
+rs1956558,NO,NO,YES,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs1956558#frequency_tab,N/A,T=0.09438,C=0.90562
+rs33912345 ,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs33912345#variant_details,N/A,C=0.446417,A=0.553583
+rs45549246,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs45549246,N/A,T=0.996235,G=0.003765
+rs56098605,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs56098605,N/A,G=0.82130,A=0.17870
+rs61746410,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs61746410,N/A,G=0.97116,A=0.02884
+rs104894480,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs104894480,https://www.omim.org/entry/606326?search=rs104894480&highlight=rs104894480,A=0.998,G=0.002
+rs114981075,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs114981075,N/A,T=0.999713,	A=0.000287
+rs140601427,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs140601427,N/A,G=0.99963,C=0.00037
+rs143371520,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs143371520,N/A,G=0.99981,A=0.00019
+rs146737847,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs146737847,N/A,G=0.994333,A=0.005667
+rs148591528,NO,NO,YES,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs148591528,N/A,C=0.99710,T=0.00290
+rs149884327,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs149884327,N/A,T=0.99993,C=0.00007
+rs150715226,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs150715226,N/A,C=0.99987,"A=0.00004, T=0.00009"
+rs200537449,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs200537449,N/A,G=0.99979,A=0.00021
+rs201560655,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs201560655,N/A,C=1.00000,"G=0.00000, T=0.00000"
+rs201838922,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs201838922,N/A,C=0.99963,T=0.00037
+rs201846510,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs201846510,N/A,T=0.99997,"A=0.00000, C=0.00003, G=0.00000"
+rs202029915,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs202029915,N/A,C=0.99972,T=0.00028
+rs367714528,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs367714528,N/A,A=0.99987,G=0.00013
+rs368912930,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs368912930,N/A,C=0.99973,T=0.00027
+rs372811052,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs372811052,N/A,C=0.999991,A=0.000009
+rs531110837,NO,NO,YES,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs531110837,N/A,C=0.99931,G=0.00069
+rs534708234,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs534708234,N/A,G=0.991,A=0.009
+rs538661695,NO,NO,YES,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs538661695,N/A,C=1.00000,"G=0.00000, T=0.00000"
+rs551864637,NO,NO,YES,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs551864637,N/A,T=0.99563,C=0.00437
+rs578089642,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs578089642,N/A,A=1.00000,G=0.00000
+rs745496406,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs745496406,N/A,G=0.999991,C=0.000009
+rs746623345,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs746623345,N/A,G=0.99980,T=0.00020
+rs748077751,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs748077751,N/A,C=1.00000,G=0.00000
+rs749617848,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs749617848,N/A,A=1.00000,C=0.00000
+rs751976804,NO,NO,NO,YES,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs751976804,N/A,G=1.00000,"C=0.00000, T=0.00000"
+rs756798787,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs756798787,N/A,C=0.999992,T=0.000008
+rs758032582,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs758032582,N/A,C=0.99993,T=0.00007
+rs770148963,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs770148963,N/A,C=0.99977,"A=0.00003, T=0.00020"
+rs770759922,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs770759922,N/A,C=0.99997,"G=0.00000, T=0.00003"
+rs779776142,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs779776142,N/A,G=0.99993,T=0.00007
+rs541877596,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs541877596,N/A,C=1.00000,T=0.00000
+rs542449460,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs542449460,N/A,T=1.00000,C=0.00000
+rs886050562,NO,NO,YES,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs886050562,N/A,G=0.99993,A=0.00007
+rs886050563,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs886050563,N/A,C=1.00000,G=0.00000
+rs886050564,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs886050564,N/A,C=1.00000,T=0.00000
+rs886050565,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs886050565,N/A,A=1.00000,G=0.00000
+rs543294261,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs543294261,N/A,C=1.00000,T=0.00000
+rs916365037,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs916365037,N/A,T=0.99997,"A=0.00000, C=0.00003"
+rs918559299,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs918559299,N/A,C=0.99950,A=0.00050
+rs1037028804,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs1037028804,N/A,A=1.00000,T=0.00000
+rs1184086571,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs1184086571,N/A,G=1.00000,A=0.00000
+rs543820873,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs543820873,N/A,C=1.00000,G=0.00000
+rs1320900185,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs1320900185,N/A,T=1.00000,C=0.00000
+rs1594631582,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs1594631582,N/A,G=0.99996,C=0.00004
+rs1893258157,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs1893258157,N/A,A=1.00000,C=0.00000
+rs1893263652,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs1893263652,N/A,A=1.00000,G=0.00000
+rs544426482,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs544426482,N/A,C=0.99957,T=0.00043
+rs545153477,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs545153477,N/A,C=0.999,T=0.001
+rs545863833,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs545863833,N/A,G=0.99993,"C=0.00000, T=0.00007"
+rs713336,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs713336,N/A,T=0.13553,"A=0.00000, G=0.86447"
+rs1998189,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs1998189,N/A,A=0.10201,"G=0.00000, T=0.89799"
+rs3759688,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs3759688,N/A,A=0.092838,"C=0.907162, T=0.000000"
+rs3759689,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs3759689,N/A,G=0.91254,"A=0.08746, T=0.00000"
+rs7150449,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs7150449,N/A,G=1.00000,C=0.00000
+rs7160408,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs7160408,N/A,A=0.10646,"G=0.89354, T=0.00000"
+rs8004739,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs8004739,N/A,C=0.97147,T=0.02853
+rs10151958,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs10151958,N/A,T=0.102730,"C=0.897270, G=0.000000"
+rs11267915,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs11267915,N/A,ATATGTATGTACCTATACAAACATATGTATGTACCTATACAAACATATGTATGTA=0.09889,ATATGTATGTACCTATACAAACATATGTATGTA=0.90111
+rs11390297,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs11390297,N/A,CCCCC=0.97488,CCCCCC=0.02512
+rs34787514,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs34787514,N/A,C=0.99997,T=0.00003
+rs56347340,NO,NO,NO,NO,NO,YES,N/A,https://www.ncbi.nlm.nih.gov/snp/rs56347340,N/A,C=1.00000,"A=0.00000, T=0.00000"
+rs57656073,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs57656073,N/A,N/A,N/A
+rs71416065,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs71416065,N/A,N/A,N/A
+rs73307448,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs73307455,N/A,A=0.99783,C=0.00217
+rs73307455,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs73307455,N/A,A=0.99783,C=0.00217
+rs73307457,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs73307457,N/A,T=0.97483,G=0.02517
+rs74560962,NO,NO,YES,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs74560962,N/A,N/A,N/A
+rs74727883,NO,NO,YES,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs74727883,N/A,N/A,N/A
+rs74788978,NO,NO,NO,NO,NO,YES,N/A,https://www.ncbi.nlm.nih.gov/snp/rs74788978,N/A,T=0.98176,C=0.01824
+rs75777065,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs75777065,N/A,C=0.99959,C=0.99959
+rs77156995,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs77156995,N/A,C=0.99901,G=0.00099
+rs78026696,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs78026696,N/A,T=0.99772,C=0.00228
+rs78647807,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs78647807,N/A,N/A,N/A
+rs78954112,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs78954112,N/A,G=0.99993,C=0.00007
+rs78978726,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs78978726,N/A,A=0.99958,C=0.00042
+rs79034770,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs79034770,N/A,T=1.00000,T=1.00000
+rs111334328,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs111334328,N/A,C=1.00000,T=0.00000
+rs111969016,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs111969016,N/A,T=1.00000,"A=0.00000, G=0.00000"
+rs112601907,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs112601907,N/A,G=1.00000,A=0.00000
+rs112613456,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs112613456,N/A,N/A,N/A
+rs112803440,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs112803440,N/A,N/A,N/A
+rs112847717,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs112847717,N/A,C=1.00000,"G=0.00000, T=0.00000"
+rs113355656,NO,NO,NO,YES,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs113355656,N/A,C=1.00000,"A=0.00000, T=0.00000"
+rs114540035,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs114540035,N/A,G=0.99764,A=0.00236
+rs116423167,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs116423167,N/A,C=0.99764,A=0.00236
+rs116432589,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs116432589,N/A,A=0.99778,C=0.00222
+rs138008996,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs138008996,N/A,C=0.99730,G=0.00270
+rs138361636,NO,NO,NO,NO,YES,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs138361636,N/A,C=1.00000,"G=0.00000, T=0.00000"
+rs139669035,YES,NO,NO,NO,NO,NO,N/A,https://www.ncbi.nlm.nih.gov/snp/rs139669035,N/A,T=0.9998,C=0.0002
+rs140916124,NO,YES,NO,NO,NO,NO,YES,https://www.ncbi.nlm.nih.gov/snp/rs140916124,N/A,G=0.99997,A=0.00003
+rs142958302,NO,YES,NO,NO,NO,NO,NO,https://www.ncbi.nlm.nih.gov/snp/rs142958302,N/A,C=1.00000,"A=0.00000, G=0.00000"

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All the information on SNPs found in SIX6</title>
+</head>
+<body>
+    <h1>All the information on SNPs found in SIX6</h1>
+    <table border="1">
+        <tr>
+            <th>dsSNP Number</th>
+            <th>Intron</th>
+            <th>Coding Region</th>
+            <th>Synonymous </th>
+            <th>UTR5</th>
+            <th>UTR3</th>
+            <th>Upstream</th>
+            <th>Downstream</th>
+            <th>dbSNP Link</th>
+            <th>Ref Allele</th>
+            <th>Alt Allele</th>
+            <th>OMIM link</th>
+        </tr>
+        {% for dsSNP, data in snp_data.items() %}
+            <tr>
+                <td>{{ data.dsSNP_number }}</td>
+                <td>{{ data.intron }}</td>
+                <td>{{ data.coding_region }}</td>
+                <td>{{ data.synonymous  }}</td>
+                <td>{{ data.utr5 }}</td>
+                <td>{{ data.utr3 }}</td>
+                <td>{{ data.upstream }}</td>
+                <td>{{ data.downstream }}</td>
+                <td><a href="{{ data.dbsnp_link }}">{{ data.dbsnp_link }}</a></td>
+                <td>{{ data.Ref_Allele }}</td>
+                <td>{{ data.Alt_Allele }}</td>
+                <td>{{ data.omim_link }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

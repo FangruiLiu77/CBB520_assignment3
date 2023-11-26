@@ -1,0 +1,96 @@
+<html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie ie6"> <![endif]--> 
+<!--[if IE 7 ]>	<html lang="en" class="ie ie7"> <![endif]--> 
+<!--[if IE 8 ]>	<html lang="en" class="ie ie8"> <![endif]--> 
+<!--[if IE 9 ]>	<html lang="en" class="ie ie9"> <![endif]--> 
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>CBB520 Assignment 3</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body id="home">
+<section class="main">
+<div id="Content" class="wrapper topSection">
+	<div id="Header">
+	<div class="wrapper">
+		<div class="logo"><h1><img src="{{ url_for('static', filename='images/logo1.jpg') }}" />Protein Coding Gene SIX6</h1>	</div>
+        <h3>A Webpage of SIX6 Features Designed for CBB520 at Duke</h3>
+        <h4>Fangrui Liu, Xinning Li, Yongjun Lu, Jiaqi Liu</h4>
+		</div>
+	</div>
+</div>
+
+
+<section class="features spacing">
+  <div class="container">
+    <h2 class="text-center">Features</h2>
+    <h3>Gene Description</h3>
+    <p>SIX6 (SIX Homeobox 6) gene is one of the homeobox transcription factors in the SIX/sine oculis family. It is located on Chromosome 14 (14q23.1), linked to SIX1 and SIX4. The corresponding protein is a homeobox protein similar to the product of the Drosophila ‘sine oculis’ gene in fly’s visual system. The protein has a divergent DNA-binding homeodomain and an upstream SIX domain, which are assumed to play a role in DNA-binding and protein-protein interactions. </p>
+    <h3>Expression and Features</h3>
+    <p>SIX6 has a high level of expression in human in the cilary body, choroid, sclera, optic nerve head, and retina. It is believed to be associated with early eye development. Specifically, it is suggested that SIX6 regulates early retinal progenitor cell proliferation as part of the eye development.</p>
+    <h3>Relationship with Glaucoma</h3>
+    <p>SIX6 locus has been associated with the development of primary open-angle glaucoma (POAG), which is a leading cause of blindness worldwide. It is believed that SIX6 gene variants lead to increased POAG susceptibility by suppressing retinal ganglion cell development, which subsequently results in reduced number of retinal ganglion cells in adulthood. The reduction in the number of retinal ganglion cells during adulthood hastens the development of glaucomatous optic neuropathy as it naturally decreases with aging. One common nonsynonymous SNP of SIX6 known as rs33912345 is found to alter SIX6 protein, leading to an increase in vertical cup-disc ratio (VCDR), which can lead to POAG.</p>
+    <h3>Reference</h3>
+    <ul>
+      <li><a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004372">Discovery and Functional Annotation of SIX6 Variants in Primary Open-Angle Glaucoma</a></li>
+      <li><a href="https://www.omim.org/entry/606326">SIX HOMEOBOX 6; SIX6</a></li>
+      <li><a href="https://www.genecards.org/cgi-bin/carddisp.pl?gene=SIX6">SIX6 Gene - SIX Homeobox 6</a></li>
+      <li><a href="https://academic.oup.com/hmg/article/23/5/1320/633377">Exome sequencing and functional analyses suggest that SIX6 is a gene involved in an altered proliferation–differentiation balance early in life and optic nerve degeneration at old age</a></li>
+    </ul>
+  </div>
+</section>
+
+</section>
+<section class="searching spacing">
+<div class="container">
+    <h2 class="text-center">BLAST Search</h2>
+<div id="subscribe">
+  <p>Search a protein sequence against 10 versions of this particular protein from different species</p>
+        <form action="{{ url_for('submit') }}" method="post">
+          <label for="input_sequence">Enter Your Sequence</label>
+          <input type="text" id="input_sequence" name="user_input">
+          <input type="submit" value="Submit"/>
+        </form>
+</div>
+</div>
+</section>
+
+</section>
+<section class="searching spacing">
+<div class="container">
+    <h2 class="text-center">SNP Search</h2>
+<div class="text-center">
+  <p>Press the 'Show All' button to check all the information</p>
+  <form action="{{ url_for('snp_show_all') }}" method="GET">
+    <input type="submit" value="Show All"/>
+  </form>
+  <p>Press the 'Synonymous' button to check all synonymous SNPs information</p>
+  <form action="{{ url_for('snp_show_synonymous') }}" method="GET">
+    <input type="submit" value="Synonymous"/>
+  </form>
+</form>
+<p>Press the 'Non-Synonymous' button to check all synonymous SNPs information</p>
+<form action="{{ url_for('snp_show_non_synonymous') }}" method="GET">
+  <input type="submit" value="Non-Synonymous"/>
+</form>
+
+
+
+</div>
+<div id="subscribe">
+        <p>Search for information on SNPs found in SIX6</p>
+        <form action="{{ url_for('snp_by_number') }}" method="post">
+          <label for="input_sequence">Enter Your dsSNP number</label>
+          <input type="text" id="input_snp_number" name="user_snp_number">
+          <input type="submit" value="Submit"/>
+          </form>
+</div>
+</div>
+</section>
+
+</body>
+</html>
