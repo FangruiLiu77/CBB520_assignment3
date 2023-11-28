@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment Results</title>
+</head>
+<body>
+
+<h2>Alignment Results - Between Uploaded and Protein Structures</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Protein Name</th>
+            <th>Upload Name</th>
+            <th>Alignment Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for result in upload_results %}
+            <tr>
+                <td>{{ result['protein_name'] }}</td>
+                <td>{{ result['upload_name'] }}</td>
+                <td>{{ result['alignment_result'] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h2>Alignment Results - Within Protein Structures</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Protein Name 1</th>
+            <th>Protein Name 2</th>
+            <th>Alignment Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for result in within_results %}
+            <tr>
+                <td>{{ result['protein_name1'] }}</td>
+                <td>{{ result['protein_name2'] }}</td>
+                <td>{{ result['alignment_result']|safe }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>

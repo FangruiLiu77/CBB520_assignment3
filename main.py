@@ -19,7 +19,7 @@ database_path = "/home/fl118/CBB520_assignment3/database"
 
 @app.route('/', methods=['GET'])
 def index():
-    
+
     return render_template('my_web.html')
 
 @app.route('/blast-results', methods=['POST'])
@@ -147,6 +147,9 @@ def upload_pdb():
     return render_template('upload_pdb.html')
 
 
+protein_structure_path = '/home/fl118/CBB520_assignment3/static/protein_structure'
+upload_structure_path = '/home/fl118/CBB520_assignment3/upload'
+
 def run_tmalign(pdb_file1, pdb_file2):
     command = f"TMalign {pdb_file1} {pdb_file2}"
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
@@ -156,14 +159,49 @@ def run_tmalign(pdb_file1, pdb_file2):
         print("Error in running TMalign: ", error)
     return output.decode()
 
-@app.route('/run_alignment', methods=['POST'])
+@app.route('/run_alignment', methods=['GET'])
 def run_alignment():
-    pdb_file1 = request.form.get('pdb1')
-    pdb_file2 = request.form.get('pdb2')
+    protein_files = os.listdir(protein_structure_path)
+    upload_files = os.listdir(upload_structure_path)
+
+    # Run TMalign for each pair of structures
+    upload_results = []
+    for protein_file in protein_files:
+        for upload_file in upload_files:
+            protein_path = os.path.join(protein_structure_path, protein_file)
+            upload_path = os.path.join(upload_structure_path, upload_file)
+            
+            # Run TMalign for the current pair of structures
+            alignment_result = run_tmalign(protein_path, upload_path)
+
+            # Append the result to the list
+            upload_results.append({
+                'protein_name': protein_file,
+                'upload_name': upload_file,
+                'alignment_result': alignment_result,
+            })
     
-    alignment_result = run_tmalign(pdb_file1, pdb_file2)
+    # Run TMalign whithin protein structures
+    within_results = []
+    for i, protein_file1 in enumerate(protein_files):
+        for j, protein_file2 in enumerate(protein_files):
+            # Avoid self-comparisons and duplicate comparisons
+            if i < j:
+                protein_path1 = os.path.join(protein_structure_path, protein_file1)
+                protein_path2 = os.path.join(protein_structure_path, protein_file2)
+                
+                # Run TMalign for the current pair of structures
+                alignment_result = run_tmalign(protein_path1, protein_path2)
+
+                # Append the result to the list
+                within_results.append({
+                    'protein_name1': protein_file1,
+                    'protein_name2': protein_file2,
+                    'alignment_result': alignment_result,
+                })
+
     # Process and return the alignment result
-    return render_template('alignment_result.html', result=alignment_result)
+    return render_template('alignment_results.html', upload_results=upload_results, within_results=within_results)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port="49151")
