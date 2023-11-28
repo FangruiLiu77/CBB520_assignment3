@@ -6,10 +6,13 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>CBB520 Assignment 3</title>
+<meta http-equiv="X-Frame-Options" content="ALLOW-FROM http://152.3.69.157:49151/">
+<title>CBB520 Assignment</title>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold"> 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+<!-- <script type="text/javascript" src="/home/fl118/CBB520_assignment3/jmol-16.1.47/jsmol/JSmol.min.js"></script> -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/jmol-14.32.83/jsmol/JSmol.min.js') }}"></script>
 </head>
 
 <body id="home">
@@ -78,8 +81,6 @@
   <input type="submit" value="Non-Synonymous"/>
 </form>
 
-
-
 </div>
 <div id="subscribe">
         <p>Search for information on SNPs found in SIX6</p>
@@ -91,6 +92,149 @@
 </div>
 </div>
 </section>
+
+<div class="container">
+  <h2 class="text-center">Upload your PDB File</h2>
+
+  <div id="subscribe" >
+      <form action="{{ url_for('upload_pdb') }}" method="post" enctype="multipart/form-data">
+          <label for="pdbFile">Upload PDB File:</label>
+          <input type="file" id="pdbFile" name="pdb_file" class="form-control">
+          <input type="submit" value="Upload" class="btn btn-primary mt-3">
+      </form>
+  </div>
+</div>
+
+
+<h2 class="text-center">Jmol Protein Viewer</h2>
+
+    <!-- Jmol applet container -->
+
+
+    <!-- Jmol script to load protein structure -->
+    <h3>Horse</h3>
+    <div id="jmolAppletHorse" style="width: 10px; height: 10px";></div>
+    <script type="text/javascript">
+        Jmol.getApplet('jmolAppletHorse', {
+            width: 800,
+            height: 500,
+            j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  // Replace with the correct path
+            script: 'load {{ url_for('static', filename='/AF-F6UQT2_horse-F1-model_v4.pdb') }}', // Replace with the actual path
+        });
+    </script>
+
+   
+   <h3>Cattle</h3>
+   <div id="jmolAppletCattle" style="width: 10px; height: 10px;"></div>
+   <script type="text/javascript">
+        Jmol.getApplet('jmolAppletCattle', {
+            width: 800,
+            height: 500,
+            j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  // Replace with the correct path
+            script: 'load {{ url_for('static', filename='/AF-A6QQM5_cattle-F1-model_v4.pdb') }}',  // Replace with the actual path
+        });
+    </script>
+
+
+   <h3>Chicken</h3>
+   <div id="jmolAppletChicken" style="width: 10px; height: 10px;"></div>
+   <script type="text/javascript">
+    Jmol.getApplet('jmolAppletChicken', {
+        width: 800,
+        height: 500,
+        j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  // Replace with the correct path
+        script: 'load {{ url_for('static', filename='/AF-O93307_chicken-F1-model_v4.pdb') }}',  // Replace with the actual path
+    });
+   </script>
+
+    <h3>Chimpanzee</h3>
+    <div id="jmolAppletChimp" style="width: 10px; height: 10px;"></div>
+    <script type="text/javascript">
+    Jmol.getApplet('jmolAppletChimp', {
+        width: 800,
+        height: 500,
+        j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  // Replace with the correct path
+        script: 'load {{ url_for('static', filename='/AF-A0A6D2XFP5_chimp-F1-model_v4.pdb') }}',  // Replace with the actual path
+    });
+    </script>
+
+    <h3>Rat</h3>
+    <div id="jmolAppletRat" style="width: 10px; height: 10px;"></div>
+    <script type="text/javascript">
+    Jmol.getApplet('jmolAppletRat', {
+        width: 800,
+        height: 500,
+        j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  // Replace with the correct path
+        script: 'load {{ url_for('static', filename='/AF-D3ZCC7_rat-F1-model_v4.pdb') }}',  // Replace with the actual path
+    });
+    </script>
+
+    <h3>Zebrafish</h3>
+    <div id="jmolAppletZebraFish" style="width: 10px; height: 10px;"></div>
+    <script type="text/javascript">
+    Jmol.getApplet('jmolAppletZebraFish', {
+        width: 800,
+        height: 500,
+        j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  // Replace with the correct path
+        script: 'load {{ url_for('static', filename='/AF-O73709_zebrafish-F1-model_v4.pdb') }}',  // Replace with the actual path
+    });
+    </script>
+
+    <h3>Human</h3>
+    <div id="jmolAppletHuman" style="width: 10px; height: 10px;"></div>
+    <script type="text/javascript">
+    Jmol.getApplet('jmolAppletHuman', {
+        width: 800,
+        height: 500,
+        j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  
+        script: 'load {{ url_for('static', filename='/AF-O95475_human-F1-model_v4.pdb') }}', 
+    }); 
+    </script>
+
+    <h3>Mouse</h3>
+    <div id="jmolAppletMouse" style="width: 10px; height: 10px;"></div>
+    <script type="text/javascript">
+    Jmol.getApplet('jmolAppletMouse', {
+        width: 800,
+        height: 500,
+        j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  
+        script: 'load {{ url_for('static', filename='/AF-Q9QZ28_mouse-F1-model_v4.pdb') }}', 
+    }); 
+    </script>
+
+    <h3>Adelie Penguin</h3>
+    <div id="jmolAppletAdeliePenguin" style="width: 10px; height: 10px;"></div>
+    <script type="text/javascript">
+    Jmol.getApplet('jmolAppletAdeliePenguin', {
+        width: 800,
+        height: 500,
+        j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  
+        script: 'load {{ url_for('static', filename='/Adelie_Penguin.pdb') }}', 
+    }); 
+    </script>
+
+    <h3>Fishing Cat</h3>
+    <div id="jmolAppletFishingCat" style="width: 10px; height: 10px;"></div>
+    <script type="text/javascript">
+    Jmol.getApplet('jmolAppletFishingCat', {
+        width: 800,
+        height: 500,
+        j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  
+        script: 'load {{ url_for('static', filename='/Fishing_Cat.pdb') }}', 
+    }); 
+    </script>
+
+     <h3>Chinese Tree Shrew .pdb</h3>
+     <div id="jmolAppletChinese" style="width: 10px; height: 10px;"></div>
+     <script type="text/javascript">
+        Jmol.getApplet('jmolAppletChinese', {
+            width: 800,
+            height: 500,
+            j2sPath: '{{ url_for('static', filename='/js/jmol-14.32.83/jsmol/j2s') }}',  
+            script: 'load {{ url_for('static', filename='/Chinese_Tree_Shrew .pdb') }}', 
+        }); 
+      </script>
+    
 
 </body>
 </html>

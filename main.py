@@ -1,12 +1,15 @@
 import os
 import csv
 import subprocess
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template, redirect, url_for
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio import SeqIO
 from Bio.SeqUtils import ProtParam
+from werkzeug.utils import secure_filename
+
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = '/home/fl118/CBB520_assignment3/upload'
 
 # Path to your database.fasta file
 database_path = "/home/fl118/CBB520_assignment3/database"
@@ -16,6 +19,7 @@ database_path = "/home/fl118/CBB520_assignment3/database"
 
 @app.route('/', methods=['GET'])
 def index():
+    
     return render_template('my_web.html')
 
 @app.route('/blast-results', methods=['POST'])
@@ -119,6 +123,47 @@ def snp_show_synonymous():
 @app.route('/snp_show_non_synonymous', methods=['GET'])
 def snp_show_non_synonymous():
     return render_template('snp_show_non_synonymous.html', snp_data= snp_data)
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+@app.route('/upload_pdb', methods=['GET', 'POST'])
+def upload_pdb():
+    if request.method == 'POST':
+        # Check if the post request has the file part
+        if 'pdb_file' not in request.files:
+            return redirect(request.url)
+        file = request.files['pdb_file']
+        # If the user does not select a file, the browser submits an
+        # empty file without a filename.
+        if file.filename == '':
+            return redirect(request.url)
+        if file:
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            return redirect(url_for('index'))
+    return render_template('upload_pdb.html')
+
+
+def run_tmalign(pdb_file1, pdb_file2):
+    command = f"TMalign {pdb_file1} {pdb_file2}"
+    process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
+    output, error = process.communicate()
+
+    if error:
+        print("Error in running TMalign: ", error)
+    return output.decode()
+
+@app.route('/run_alignment', methods=['POST'])
+def run_alignment():
+    pdb_file1 = request.form.get('pdb1')
+    pdb_file2 = request.form.get('pdb2')
+    
+    alignment_result = run_tmalign(pdb_file1, pdb_file2)
+    # Process and return the alignment result
+    return render_template('alignment_result.html', result=alignment_result)
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port="49151")
